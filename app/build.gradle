@@ -30,4 +30,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    // Arello-Mobile Moxy Library
+    compile 'com.arello-mobile:moxy:1.5.3' // base
+    compile 'com.arello-mobile:moxy-android:1.5.3' // mvp
+    compile 'com.arello-mobile:moxy-app-compat:1.5.3' // app compat mvp
+    annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.3' // base
+    kapt 'com.arello-mobile:moxy-compiler:1.5.3'
+}
+
+// Arello-Mobile Moxy Library
+kapt {
+    generateStubs = true
 }
